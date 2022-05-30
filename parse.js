@@ -1,5 +1,5 @@
 const ndjson = require('ndjson');
-let fs = require('fs');
+const fs = require('fs');
 
 fs.createReadStream('data.txt')
   .pipe(ndjson.parse())
